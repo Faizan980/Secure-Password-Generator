@@ -14,10 +14,19 @@ const checkNumber = document.getElementById('check-number')
 const checkSymbols = document.getElementById('check-symbols')
 
 const getPasswordLength = document.getElementById('get-password-length')
+const resetBtn = document.getElementById('reset-btn')
 
 const btn = document.getElementById('btn')
 const textBox = document.getElementById('text-box')
 
+
+resetBtn.addEventListener("click", function() {
+    window.location = window.location
+})
+
+function reset() {
+    location.reload()
+}
 
 function copyText() {
     textBox.select()
